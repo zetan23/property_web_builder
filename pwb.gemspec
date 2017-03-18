@@ -44,6 +44,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'cloudinary'
   s.add_dependency 'rets'
   s.add_dependency 'active_hash'
+  s.add_dependency 'comfortable_mexican_sofa', '~> 1.12.0'
 
   # s.add_dependency 'redis'
   # # logster gem has to be after redis..
