@@ -3,10 +3,14 @@ require_dependency 'pwb/application_controller'
 module Pwb
   class SectionsController < ApplicationController
 
-    # def sell
-    #   # @agency = Agency.find_by_subdomain(request.subdomain.downcase)
-    #   @enquiry = Message.new
-    # end
+    def sell
+      @content = Content.find_by_key("aboutUs")
+      @page_title = I18n.t("aboutUs")
+
+      # @agency = Agency.find_by_subdomain(request.subdomain.downcase)
+      # @enquiry = Message.new
+      return render "/pwb/sections/about_us"
+    end
 
     def about_us
       @content = Content.find_by_key("aboutUs")

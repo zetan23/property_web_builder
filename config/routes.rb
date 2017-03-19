@@ -33,7 +33,7 @@ Pwb::Engine.routes.draw do
     get "/properties/for-sale/:id/:url_friendly_title" => "props#show_for_sale", as: "prop_show_for_sale"
 
     get "/about-us" => "sections#about_us"
-    get "/sell" => "sections#sell"
+    get "/sell" => "comfy#show"
     get "/buy" => "search#buy"
     get "/rent" => "search#rent"
 

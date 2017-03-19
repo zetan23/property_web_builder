@@ -32,4 +32,5 @@ spec/dummy/public/css/
 spec/dummy/public/img/
 spec/dummy/public/js/
 spec/dummy/public/capybara.html
+spec/dummy/public/system
 notes
